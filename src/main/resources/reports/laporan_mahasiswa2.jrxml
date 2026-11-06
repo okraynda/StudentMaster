@@ -1,0 +1,122 @@
+<!-- Created with Jaspersoft Studio version 7.0.8.final using JasperReports Library version 7.0.8-6f896111  -->
+<jasperReport name="laporan_mahasiswa2" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="016dd0a8-d5fd-4f33-9d47-b751956813e6">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="StudentManagement"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<query language="sql"><![CDATA[SELECT
+    id,
+    nim,
+    nama,
+    jenis_kelamin,
+    jurusan,
+    email,
+    no_telepon
+FROM students
+ORDER BY id ASC]]></query>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="nim" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nim"/>
+		<property name="com.jaspersoft.studio.field.label" value="nim"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nama"/>
+		<property name="com.jaspersoft.studio.field.label" value="nama"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="jenis_kelamin" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="jenis_kelamin"/>
+		<property name="com.jaspersoft.studio.field.label" value="jenis_kelamin"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="jurusan" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="jurusan"/>
+		<property name="com.jaspersoft.studio.field.label" value="jurusan"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="email"/>
+		<property name="com.jaspersoft.studio.field.label" value="email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="no_telepon" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="no_telepon"/>
+		<property name="com.jaspersoft.studio.field.label" value="no_telepon"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="100" splitType="Stretch">
+		<element kind="staticText" uuid="8ae71699-62db-4f00-ac99-46a6acd60f9c" x="70" y="30" width="370" height="40" fontSize="22.0" hTextAlign="Center">
+			<text><![CDATA[Laporan Data Mahasiswa]]></text>
+		</element>
+		<element kind="image" uuid="e8a76c98-b725-47ac-abc1-9a0fb9fb69f2" x="430" y="20" width="80" height="80" usingCache="true">
+			<expression><![CDATA["C:/Users/dwipu/IdeaProjects/StudentManagement/src/main/resources/image/logo_ubl.png"]]></expression>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="29" splitType="Stretch">
+		<element kind="staticText" uuid="6073459a-c38b-4ef3-909d-cf4bbeec7c72" x="0" y="0" width="30" height="20" fontSize="14.0" hTextAlign="Center">
+			<text><![CDATA[ID]]></text>
+		</element>
+		<element kind="staticText" uuid="5283f909-ca6e-46da-a247-a8f8f4d88faf" x="30" y="0" width="70" height="20" fontSize="14.0" hTextAlign="Center">
+			<text><![CDATA[NIM]]></text>
+		</element>
+		<element kind="staticText" uuid="1489ba8b-19ae-4ae6-bdee-f5fdc0961f1a" x="100" y="0" width="102" height="20" fontSize="14.0" hTextAlign="Center">
+			<text><![CDATA[NAMA]]></text>
+		</element>
+		<element kind="staticText" uuid="d1d90a7f-e3d2-49e3-8baa-6895f38e9b36" x="180" y="0" width="120" height="20" fontSize="14.0" hTextAlign="Center">
+			<text><![CDATA[JENIS KELAMIN]]></text>
+		</element>
+		<element kind="staticText" uuid="f965dd7d-5687-436a-a3a8-0dced3f25fab" x="460" y="0" width="115" height="20" fontSize="14.0" hTextAlign="Center">
+			<text><![CDATA[NO.TELEPON]]></text>
+		</element>
+		<element kind="staticText" uuid="17634684-6566-41e8-a2a2-21dad9b0b937" x="370" y="0" width="90" height="20" fontSize="14.0" hTextAlign="Center">
+			<text><![CDATA[EMAIL]]></text>
+		</element>
+		<element kind="staticText" uuid="ee552c4c-06e1-4b95-be95-bd29037f1dbb" x="294" y="0" width="90" height="20" fontSize="14.0" hTextAlign="Center">
+			<text><![CDATA[JURUSAN]]></text>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="46" splitType="Stretch">
+			<element kind="textField" uuid="22f0b8b5-736f-4f1e-81a5-975cb19fd6a6" x="0" y="0" width="30" height="30" hTextAlign="Center">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="99806184-794e-4ce7-a1f7-fdef6d6d8be1"/>
+				<expression><![CDATA[$F{id}]]></expression>
+			</element>
+			<element kind="textField" uuid="502446e2-4b10-4142-858e-82afc588d35e" x="30" y="1" width="70" height="30" hTextAlign="Center">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2cc05cf7-a745-4289-a156-3b77b72f9762"/>
+				<expression><![CDATA[$F{nim}]]></expression>
+			</element>
+			<element kind="textField" uuid="39ad3e0f-55b0-4748-b1da-2388be8fa604" x="102" y="-2" width="100" height="30" hTextAlign="Center">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1b665022-b411-4508-ba0b-ed44672958e8"/>
+				<expression><![CDATA[$F{nama}]]></expression>
+			</element>
+			<element kind="textField" uuid="841611ab-99fc-4db5-b4f8-30b721a5a3f7" x="190" y="-2" width="100" height="30" hTextAlign="Center">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="01c46e20-2552-4b99-8a5a-186d1e7c9215"/>
+				<expression><![CDATA[$F{jenis_kelamin}]]></expression>
+			</element>
+			<element kind="textField" uuid="704ac1e0-98be-4611-88e6-6966d2fb9d8c" x="380" y="-2" width="100" height="28" hTextAlign="Center">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1a0ec94f-2a8c-4b5d-ab52-5238577fed17"/>
+				<expression><![CDATA[$F{email}]]></expression>
+			</element>
+			<element kind="textField" uuid="9b33a990-f71c-432a-8d8e-8bf92737298c" x="289" y="-2" width="100" height="30" hTextAlign="Center">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e0224b24-60b8-42f6-93d4-d5d4ec80908a"/>
+				<expression><![CDATA[$F{jurusan}]]></expression>
+			</element>
+			<element kind="textField" uuid="c2c9b1e0-5350-40fc-866b-c98130c2df83" x="480" y="0" width="100" height="30" hTextAlign="Center">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="14c867ca-f01b-4d50-995a-50b11bc84652"/>
+				<expression><![CDATA[$F{no_telepon}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="18" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch">
+		<element kind="textField" uuid="d101751c-bd1f-465b-896e-2f461718f013" x="440" y="20" width="100" height="30">
+			<expression><![CDATA["Halaman " + $V{PAGE_NUMBER}]]></expression>
+		</element>
+	</pageFooter>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
